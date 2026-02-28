@@ -382,3 +382,78 @@
   padding: 24px 0; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
   font-size: 12px; color: rgba(255,255,255,0.25);
 }
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  /* NAV */
+  .nav-inner { padding: 12px 20px; }
+  .btn-nav-cta { display: none; }
+
+  /* HERO */
+  .hero { padding: 90px 20px 60px; min-height: auto; flex-direction: column; }
+  .hero-content { margin-left: 0; max-width: 100%; }
+  .hero-title { font-size: clamp(52px, 15vw, 72px); letter-spacing: -1.5px; }
+  .hero-sub { font-size: 16px; }
+  .hero-buttons { flex-direction: column; }
+  .btn-primary, .btn-secondary { justify-content: center; text-align: center; }
+  .hero-features { gap: 12px; flex-direction: column; }
+  .hero-phone-visual { display: none; }
+
+  /* STATS */
+  .stats-band { flex-direction: row; flex-wrap: wrap; }
+  .stat-item { min-width: 50%; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); padding: 28px 20px; }
+  .stat-value { font-size: 36px; }
+
+  /* SECTION COMMON */
+  .section-inner { padding: 0 20px; }
+  .section-title { font-size: clamp(28px, 7vw, 40px); }
+  .section-header { margin-bottom: 40px; }
+
+  /* SERVICES */
+  .services-section { padding: 70px 0; }
+  .services-grid { grid-template-columns: 1fr; gap: 16px; }
+  .service-card { padding: 28px 24px; }
+
+  /* BANNER */
+  .banner-inner { max-height: 280px; }
+  .banner-img { height: 280px; }
+  .banner-overlay { padding: 0 20px; }
+  .banner-text-block h3 { font-size: 22px; }
+  .banner-text-block p { font-size: 14px; margin-bottom: 16px; }
+
+  /* HOW IT WORKS */
+  .how-section { padding: 70px 0; }
+  .steps-row { flex-direction: column; align-items: center; gap: 8px; }
+  .step-card { max-width: 100%; padding: 28px 24px; }
+  .step-arrow { display: none; }
+  .step-num { font-size: 48px; }
+
+  /* TESTIMONIALS */
+  .testimonials-section { padding: 70px 0; }
+  .testimonials-grid { grid-template-columns: 1fr; gap: 16px; }
+  .testimonial-card { padding: 28px 24px; }
+
+  /* LOCATIONS */
+  .locations-section { padding: 70px 0; }
+  .regions-grid { grid-template-columns: 1fr; gap: 12px; }
+
+  /* CTA */
+  .cta-section { padding: 80px 20px; }
+  .cta-title { font-size: clamp(32px, 8vw, 48px); }
+  .cta-sub { font-size: 15px; }
+  .cta-buttons { flex-direction: column; align-items: center; }
+  .btn-cta-white, .btn-cta-outline { width: 100%; justify-content: center; }
+
+  /* FOOTER */
+  .footer { padding: 60px 20px 0; }
+  .footer-inner { flex-direction: column; gap: 40px; }
+  .footer-brand { max-width: 100%; }
+  .footer-links-group { gap: 32px; }
+  .footer-bottom { flex-direction: column; gap: 4px; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: clamp(48px, 18vw, 64px); }
+  .stat-item { min-width: 50%; }
+  .footer-links-group { flex-direction: column; gap: 28px; }
+}
